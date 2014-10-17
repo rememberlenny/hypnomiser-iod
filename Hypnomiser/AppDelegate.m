@@ -21,9 +21,9 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    CGRect firstFrame = self.window.bounds;
     ATRHypnosisView * firstView = [[ATRHypnosisView alloc] initWithFrame:firstFrame];
-    firstView.backgroundColor = [UIColor redColor];
+    firstView.backgroundColor = [UIColor whiteColor];
     
     [self.window addSubview:firstView];
     
