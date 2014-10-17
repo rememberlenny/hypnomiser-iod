@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ATRHypnosisView.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    ATRHypnosisView * firstView = [[ATRHypnosisView alloc] initWithFrame:firstFrame];
+    firstView.backgroundColor = [UIColor redColor];
+    
+    [self.window addSubview:firstView];
+    
     return YES;
 }
 

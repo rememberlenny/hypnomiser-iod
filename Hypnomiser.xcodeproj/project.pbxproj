@@ -41,8 +41,8 @@
 		034F091F19F0DC3C005C2E23 /* HypnomiserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnomiserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034F092419F0DC3C005C2E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034F092519F0DC3C005C2E23 /* HypnomiserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnomiserTests.m; sourceTree = "<group>"; };
-		034F092F19F0DC75005C2E23 /* ATRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRHypnosisView.h; sourceTree = "<group>"; };
-		034F093019F0DC75005C2E23 /* ATRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRHypnosisView.m; sourceTree = "<group>"; };
+		034F092F19F0DC75005C2E23 /* ATRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATRHypnosisView.h; path = ../ATRHypnosisView.h; sourceTree = "<group>"; };
+		034F093019F0DC75005C2E23 /* ATRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATRHypnosisView.m; path = ../ATRHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,6 @@
 		034F08FD19F0DC3C005C2E23 = {
 			isa = PBXGroup;
 			children = (
-				034F092F19F0DC75005C2E23 /* ATRHypnosisView.h */,
-				034F093019F0DC75005C2E23 /* ATRHypnosisView.m */,
 				034F090819F0DC3C005C2E23 /* Hypnomiser */,
 				034F092219F0DC3C005C2E23 /* HypnomiserTests */,
 				034F090719F0DC3C005C2E23 /* Products */,
@@ -86,6 +84,8 @@
 		034F090819F0DC3C005C2E23 /* Hypnomiser */ = {
 			isa = PBXGroup;
 			children = (
+				034F092F19F0DC75005C2E23 /* ATRHypnosisView.h */,
+				034F093019F0DC75005C2E23 /* ATRHypnosisView.m */,
 				034F090D19F0DC3C005C2E23 /* AppDelegate.h */,
 				034F090E19F0DC3C005C2E23 /* AppDelegate.m */,
 				034F091019F0DC3C005C2E23 /* ViewController.h */,
