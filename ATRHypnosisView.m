@@ -36,6 +36,11 @@
     [[UIColor lightGrayColor] setStroke];
     
     [path stroke];
+    
+    CGRect logoFrame = CGRectMake(bounds.size.width / 4.0, bounds.size.height / 5.0, bounds.size.width / 2.0, bounds.size.height / 2.0);
+    
+    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
+    [logoImage drawInRect:logoFrame];
 }
 
 -(instancetype)initWithFrame:(CGRect)frame{

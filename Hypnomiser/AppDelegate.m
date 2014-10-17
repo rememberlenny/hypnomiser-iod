@@ -26,7 +26,7 @@
     firstView.backgroundColor = [UIColor whiteColor];
     
     [self.window addSubview:firstView];
-    
+   
     return YES;
 }
 
