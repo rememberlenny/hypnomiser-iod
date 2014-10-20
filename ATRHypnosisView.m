@@ -8,6 +8,12 @@
 
 #import "ATRHypnosisView.h"
 
+@interface ATRHypnosisView()
+
+@property (strong, nonatomic) UIColor *circleColor;
+
+@end
+
 @implementation ATRHypnosisView
 
 - (void)drawRect:(CGRect)rect {
@@ -33,20 +39,21 @@
     
     path.lineWidth = 10;
     
-    [[UIColor lightGrayColor] setStroke];
+    [self.circleColor setStroke];
     
     [path stroke];
     
-    CGRect logoFrame = CGRectMake(bounds.size.width / 4.0, bounds.size.height / 5.0, bounds.size.width / 2.0, bounds.size.height / 2.0);
-    
-    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
-    [logoImage drawInRect:logoFrame];
+    //    CGRect logoFrame = CGRectMake(bounds.size.width / 4.0, bounds.size.height / 5.0, bounds.size.width / 2.0, bounds.size.height / 2.0);
+        
+    //    UIImage *logoImage = [UIImage imageNamed:@"logo.png"];
+    //    [logoImage drawInRect:logoFrame];
 }
 
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     
     if(self){
+        self.circleColor = [UIColor lightGrayColor];
         self.backgroundColor = [UIColor clearColor];
     }
     
