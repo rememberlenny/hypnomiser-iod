@@ -21,12 +21,23 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    CGRect firstFrame = self.window.bounds;
-    ATRHypnosisView * firstView = [[ATRHypnosisView alloc] initWithFrame:firstFrame];
-    firstView.backgroundColor = [UIColor whiteColor];
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
     
-    [self.window addSubview:firstView];
-   
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    scrollView.pagingEnabled = YES;
+    [self.window addSubview:scrollView];
+    
+    ATRHypnosisView *hypnosisView = [[ATRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:hypnosisView];
+    
+    screenRect.origin.x += screenRect.size.width;
+    ATRHypnosisView *anotherView = [[ATRHypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
+    
+    scrollView.contentSize = bigRect.size;
+    
     return YES;
 }
 
